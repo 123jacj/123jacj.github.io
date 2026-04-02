@@ -31,7 +31,7 @@
 
     <!-- 3. 技能栈 -->
     <section id="skills" class="skills">
-      <h2 class="section-title">技能栈</h2>
+      <h2 class="section-title">技术栈</h2>
       <div class="container skills-grid">
         <div class="skill-card" v-for="(item, index) in skills" :key="index">
           <h3>{{ item.name }}</h3>
@@ -113,7 +113,7 @@ const projects = ref([
 
 // 竞赛经历
 const competitions = ref([
-  { name: '敬请期待', time: '2026.04', desc: '敬请期待' }
+  { name: '打陈志诚大赛', time: '2026.04.02', desc: '全国特等奖' },
 ])
 // ====================================================
 </script>
@@ -215,6 +215,7 @@ const competitions = ref([
   border-radius: 8px;
   box-shadow: var(--shadow);
   border-left: 4px solid var(--primary);
+  text-align: center;
 }
 
 .competition-item span {

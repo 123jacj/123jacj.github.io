@@ -11,6 +11,7 @@
         <li><a href="#home">首页</a></li>
         <li><a href="#about">关于我</a></li>
         <li><a href="#skills">技能栈</a></li>
+        <li><a href="#projects">项目经历</a></li>
         <li><a href="#competition">竞赛经历</a></li>
         <li><a href="#blogs">我的随笔</a></li>
         <li><a href="#contact">联系我</a></li>
