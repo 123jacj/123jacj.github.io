@@ -24,7 +24,7 @@
       <div class="container about-content">
         <p>
           西安邮电大学计算机专业大二学生，主攻Java后端技术栈，同时掌握基本的Vue前端开发能力。
-          具备不算扎实计算机知识，尝试参与学科竞赛，喜欢写博客，总结技术笔记，致力于成为一名优秀的全栈开发者。
+          具备不扎实计算机知识，尝试参与学科竞赛，喜欢写博客，总结技术笔记，致力于成为一名优秀的全栈开发者。
         </p>
       </div>
     </section>
@@ -40,7 +40,18 @@
       </div>
     </section>
 
-    <!-- 4. 竞赛经历 -->
+    <!-- 4. 项目经历 -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">项目经历</h2>
+      <div class="container projects-grid">
+        <div class="project-card" v-for="(item, index) in projects" :key="index">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.desc }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 竞赛经历 -->
     <section id="competition" class="competition">
       <h2 class="section-title">竞赛经历</h2>
       <div class="container competition-list">
@@ -86,20 +97,23 @@ const blogList = ref(blogData)
 // ============== 填空位：替换为你的信息 ==============
 // 技能栈
 const skills = ref([
-  { name: 'Java', desc: '后端核心语言，掌握集合、多线程、IO、JVM' },
-  { name: 'SpringBoot', desc: '待学习' },
-  { name: 'MySQL', desc: '待学习' },
+  { name: 'Java', desc: '后端核心语言，掌握集合、多线程、IO等' },
   { name: 'Vue3 + Vite', desc: '前端开发，能够独立开发响应式页面' },
   { name: 'Git', desc: 'learning....' },
   { name: 'HTML/CSS/JavaScript', desc: '三件套，能够独立开发静态页面' },
   { name: 'Python', desc: '初步掌握初级语法 与面向对象内容 同时学习了解了数据分析与制图等内容' },
-  { name: 'Others', desc: '此外还初步了解数据库、linux操作系统等内容，这部分内容没有熟练掌握' }
+  { name: 'Others', desc: '此外还初步了解数据库、linux操作系统等内容，这部分内容没有熟练掌握' },
+  { name: '后续学习内容', desc: 'JavaWeb Redis SpringBoot SpringCloud.....' }
+])
+
+// 项目经历
+const projects = ref([
+  { name: '敬请期待', desc: '敬请期待' }
 ])
 
 // 竞赛经历
 const competitions = ref([
-  { name: '蓝桥杯程序设计大赛', time: '2025.4', desc: '省级二等奖' },
-  { name: '其他比赛', time: '2026.04', desc: '敬请期待' }
+  { name: '敬请期待', time: '2026.04', desc: '敬请期待' }
 ])
 // ====================================================
 </script>
@@ -165,6 +179,25 @@ const competitions = ref([
 }
 
 .skill-card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* 项目经历 */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.project-card h3 {
   color: var(--primary);
   margin-bottom: 10px;
 }
