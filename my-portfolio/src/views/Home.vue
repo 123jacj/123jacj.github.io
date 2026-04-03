@@ -46,6 +46,7 @@
       <div class="container projects-grid">
         <div class="project-card" v-for="(item, index) in projects" :key="index">
           <h3>{{ item.name }}</h3>
+          <span>{{ item.time }}</span>
           <p>{{ item.desc }}</p>
         </div>
       </div>
@@ -63,7 +64,7 @@
       </div>
     </section>
 
-    <!-- 5. 随笔博客列表 -->
+    <!-- 6. 随笔博客列表 -->
     <section id="blogs" class="blogs">
       <h2 class="section-title">我的博客随笔</h2>
       <p>博客网站正在搭建中....</p>
@@ -83,6 +84,7 @@
       <div class="container contact-info">
         <p>📧 邮箱：1439668752@qq.com</p>
         <p>🐱 GitHub：<a href="https://github.com/123jacj" target="_blank">https://github.com/你的GitHub</a></p>
+        <p>🔗 Blog: <a href="https://blog-of-muzile.vercel.app/">https://blog-of-muzile.vercel.app/</a></p>
       </div>
     </section>
   </div>
@@ -108,12 +110,12 @@ const skills = ref([
 
 // 项目经历
 const projects = ref([
-  { name: '敬请期待', desc: '敬请期待' }
+  { name: '敬请期待', desc: '敬请期待',time:'2026.---' }
 ])
 
 // 竞赛经历
 const competitions = ref([
-  { name: '打陈志诚大赛', time: '2026.04.02', desc: '全国特等奖' },
+  { name: '敬请期待', desc: '敬请期待' ,time:'2026.---'}
 ])
 // ====================================================
 </script>
@@ -198,8 +200,14 @@ const competitions = ref([
 }
 
 .project-card h3 {
-  color: var(--primary);
   margin-bottom: 10px;
+}
+
+.project-card span {
+  color: var(--primary);
+  font-size: 14px;
+  margin: 5px 0;
+  display: inline-block;
 }
 
 /* 竞赛经历 */

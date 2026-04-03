@@ -13,7 +13,7 @@
         <li><a href="#skills">技能栈</a></li>
         <li><a href="#projects">项目经历</a></li>
         <li><a href="#competition">竞赛经历</a></li>
-        <li><a href="#blogs">我的随笔</a></li>
+        <li><a href="#blogs">我的博客</a></li>
         <li><a href="#contact">联系我</a></li>
       </ul>
 
@@ -30,8 +30,9 @@
       <li><a href="#home" @click="isShowMenu = false">首页</a></li>
       <li><a href="#about" @click="isShowMenu = false">关于我</a></li>
       <li><a href="#skills" @click="isShowMenu = false">技能栈</a></li>
+      <li><a href="#projects" @click="isShowMenu = false">项目经历</a></li>
       <li><a href="#competition" @click="isShowMenu = false">竞赛经历</a></li>
-      <li><a href="#blogs" @click="isShowMenu = false">我的随笔</a></li>
+      <li><a href="#blogs" @click="isShowMenu = false">我的博客</a></li>
       <li><a href="#contact" @click="isShowMenu = false">联系我</a></li>
     </ul>
   </nav>
