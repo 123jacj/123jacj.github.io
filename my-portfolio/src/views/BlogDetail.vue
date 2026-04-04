@@ -10,6 +10,7 @@
         <h1 class="detail-title">{{ blog.title }}</h1>
         <p class="detail-date">{{ blog.date }}</p>
         <div class="detail-body">{{ blog.content }}</div>
+
       </div>
 
       <div v-else class="empty">

@@ -3,7 +3,8 @@
     <div class="container">
       <p>© 2026 【木子李】 | 西安邮电大学 计算机专业</p>
       <p class="footer-link">
-        <a href="https://github.com/123jacj" target="_blank">GitHub</a>
+        <a href="https://blog.muzile.top/">🔗博客</a>
+        <a href="https://www.muzile.top/" target="_blank">🐱GitHub</a>
         <span> | </span>
         <span>Java后端/全栈开发</span>
       </p>

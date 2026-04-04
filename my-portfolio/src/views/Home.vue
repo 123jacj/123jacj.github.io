@@ -66,14 +66,16 @@
 
     <!-- 6. 随笔博客列表 -->
     <section id="blogs" class="blogs">
-      <h2 class="section-title">我的博客随笔</h2>
-      <p>博客网站正在搭建中....</p>
+      <h2 class="section-title">我的
+        <a href="https://blog.muzile.top/">博客</a>
+
+        随笔</h2>
       <div class="container blogs-list">
         <div class="blog-card" v-for="blog in blogList" :key="blog.id">
           <h3>{{ blog.title }}</h3>
           <span class="date">{{ blog.date }}</span>
           <p class="summary">{{ blog.summary }}</p>
-          <router-link :to="`/blog/${blog.id}`" class="read-more">阅读全文 →</router-link>
+           <a :href="blog.href">阅读全文</a>
         </div>
       </div>
     </section>
@@ -84,7 +86,7 @@
       <div class="container contact-info">
         <p>📧 邮箱：1439668752@qq.com</p>
         <p>🐱 GitHub：<a href="https://github.com/123jacj" target="_blank">https://github.com/你的GitHub</a></p>
-        <p>🔗 Blog: <a href="https://blog-of-muzile.vercel.app/">https://blog-of-muzile.vercel.app/</a></p>
+        <p>🔗 Blog: <a href="https://blog.muzile.top/">https://blog.muzile.top/</a></p>
       </div>
     </section>
   </div>
